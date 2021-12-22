@@ -6,6 +6,8 @@ config:
   via: apache
   database: mysql
   xdebug: true
+  drush: ^10
+  composer_version: '2.1.14'
 proxy:
   mailhog:
     - mail.trucking.lndo.site
