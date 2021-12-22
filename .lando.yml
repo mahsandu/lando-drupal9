@@ -10,9 +10,9 @@ config:
   composer_version: '2.1.14'
 proxy:
   mailhog:
-    - mail.trucking.lndo.site
+    - mail.eduvai.lndo.site
   pma:
-    - pma.trucking.lndo.site
+    - pma.eduvai.lndo.site
 services:
   drupal_db:
     type: mysql
