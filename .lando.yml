@@ -1,4 +1,4 @@
-name: trucking
+name: eduvai
 recipe: drupal9
 config:
   webroot: ./public_html
@@ -17,9 +17,9 @@ services:
   drupal_db:
     type: mysql
     creds:
-      user: trucking
-      password: trucking
-      database: trucking
+      user: eduvai
+      password: eduvai
+      database: eduvai
   mailhog:
     type: mailhog:v1.0.0
     portforward: false
