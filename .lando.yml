@@ -1,32 +1,28 @@
-name: eduvai
+name: trucking
 recipe: drupal9
 config:
-  webroot: ./public_html
+  webroot: web
   php: '7.4'
   via: apache
   database: mysql
   xdebug: true
-  drush: ^10
-  composer_version: '2.1.14'
 proxy:
   mailhog:
-    - mail.eduvai.lndo.site
+    - mail.trucking.lndo.site
   pma:
-    - pma.eduvai.lndo.site
+    - pma.trucking.lndo.site
 services:
   drupal_db:
     type: mysql
     creds:
-      user: eduvai
-      password: eduvai
-      database: eduvai
+      user: trucking
+      password: trucking
+      database: trucking
   mailhog:
     type: mailhog:v1.0.0
     portforward: false
     hogfrom:
       - appserver
-  appserver:
-    type: php
   phpmyAdmin:
     type: phpmyadmin
     hosts:
